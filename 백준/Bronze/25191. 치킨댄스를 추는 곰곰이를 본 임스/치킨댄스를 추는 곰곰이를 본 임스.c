@@ -1,9 +1,6 @@
 #include<stdio.h>
 int main() {
-	int chi=0, cok = 0, beer = 0, total = 0;
+	int chi,cok,beer;
 	scanf("%d\n%d %d", &chi, &cok, &beer);
-	total = cok / 2 + beer;
-	if (total > chi)printf("%d", chi);
-	else printf("%d", total);
-
+	cok / 2 + beer > chi ? printf("%d", chi) : printf("%d", cok / 2 + beer);
 }
